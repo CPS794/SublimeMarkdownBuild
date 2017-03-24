@@ -1,6 +1,9 @@
 {
-    "output_html" : false,
+    "output_html" : true,
     "open_html_in" : "browser",  // possible values are "browser", "sublime", or "both", default is "browser"
     "use_css" : true,
-    "charset" : "UTF-8" 
+    "charset" : "UTF-8",
+    "use_script" : true,
+    "body_add":" onload=load()",
+    "script_url":"/Review/js/js4markdown.js"
 }
