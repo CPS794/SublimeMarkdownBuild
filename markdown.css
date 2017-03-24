@@ -6,7 +6,7 @@ html {
 }
 
 body{
-    font-family: helvetica, arial, freesans, clean, sans-serif;
+    font-family: "Microsoft YaHei", helvetica, arial, freesans, clean, sans-serif;
     color: #333;
     background-color: #fff;
     border-color: #999999;
@@ -14,7 +14,7 @@ body{
     line-height: 1.5;
     margin: 2em 3em;
     text-align:left;
-    padding: 0 100px 0 100px;
+    padding: 0 10px 0 10px;
 }
 
 pre{
@@ -38,9 +38,6 @@ pre code {
 }
 li p{
     margin: 0.3em;
-}
-ul > li{
-    list-style-type: disc;
 }
 a:link, a:visited{
     color: #33e;
@@ -71,6 +68,30 @@ h4 {
 }
 h5 {
     font-size: 18px;
+}
+ul {
+    list-style-type: disc;
+}
+ul ul, ol ul {
+    list-style-type: circle;
+}
+ol ol ul, ol ul ul, ul ol ul, ul ul ul {
+    list-style-type: square;
+}
+ol ol ol ul, ol ol ul ul, ol ul ol ul, ol ul ul ul, ul ol ol ul, ul ol ul ul, ul ul ol ul, ul ul ul ul{
+    list-style-type: disc;
+}
+ol ol ol ol ul, ol ol ol ul ul, ol ol ul ol ul, ol ol ul ul ul, ol ul ol ol ul, ol ul ol ul ul, ol ul ul ol ul, ol ul ul ul ul, ul ol ol ol ul, ul ol ol ul ul, ul ol ul ol ul, ul ol ul ul ul, ul ul ol ol ul, ul ul ol ul ul, ul ul ul ol ul, ul ul ul ul ul{
+    list-style-type: circle;
+}
+ol ol ol ol ol ul, ol ol ol ol ul ul, ol ol ol ul ol ul, ol ol ol ul ul ul, ol ol ul ol ol ul, ol ol ul ol ul ul, ol ol ul ul ol ul, ol ol ul ul ul ul, ol ul ol ol ol ul, ol ul ol ol ul ul, ol ul ol ul ol ul, ol ul ol ul ul ul, ol ul ul ol ol ul, ol ul ul ol ul ul, ol ul ul ul ol ul, ol ul ul ul ul ul, ul ol ol ol ol ul, ul ol ol ol ul ul, ul ol ol ul ol ul, ul ol ol ul ul ul, ul ol ul ol ol ul, ul ol ul ol ul ul, ul ol ul ul ol ul, ul ol ul ul ul ul, ul ul ol ol ol ul, ul ul ol ol ul ul, ul ul ol ul ol ul, ul ul ol ul ul ul, ul ul ul ol ol ul, ul ul ul ol ul ul, ul ul ul ul ol ul, ul ul ul ul ul ul{
+    list-style-type: square;
+}
+ol ol ol ol ol ol ul, ol ol ol ol ol ul ul, ol ol ol ol ul ol ul, ol ol ol ol ul ul ul, ol ol ol ul ol ol ul, ol ol ol ul ol ul ul, ol ol ol ul ul ol ul, ol ol ol ul ul ul ul, ol ol ul ol ol ol ul, ol ol ul ol ol ul ul, ol ol ul ol ul ol ul, ol ol ul ol ul ul ul, ol ol ul ul ol ol ul, ol ol ul ul ol ul ul, ol ol ul ul ul ol ul, ol ol ul ul ul ul ul, ol ul ol ol ol ol ul, ol ul ol ol ol ul ul, ol ul ol ol ul ol ul, ol ul ol ol ul ul ul, ol ul ol ul ol ol ul, ol ul ol ul ol ul ul, ol ul ol ul ul ol ul, ol ul ol ul ul ul ul, ol ul ul ol ol ol ul, ol ul ul ol ol ul ul, ol ul ul ol ul ol ul, ol ul ul ol ul ul ul, ol ul ul ul ol ol ul, ol ul ul ul ol ul ul, ol ul ul ul ul ol ul, ol ul ul ul ul ul ul, ul ol ol ol ol ol ul, ul ol ol ol ol ul ul, ul ol ol ol ul ol ul, ul ol ol ol ul ul ul, ul ol ol ul ol ol ul, ul ol ol ul ol ul ul, ul ol ol ul ul ol ul, ul ol ol ul ul ul ul, ul ol ul ol ol ol ul, ul ol ul ol ol ul ul, ul ol ul ol ul ol ul, ul ol ul ol ul ul ul, ul ol ul ul ol ol ul, ul ol ul ul ol ul ul, ul ol ul ul ul ol ul, ul ol ul ul ul ul ul, ul ul ol ol ol ol ul, ul ul ol ol ol ul ul, ul ul ol ol ul ol ul, ul ul ol ol ul ul ul, ul ul ol ul ol ol ul, ul ul ol ul ol ul ul, ul ul ol ul ul ol ul, ul ul ol ul ul ul ul, ul ul ul ol ol ol ul, ul ul ul ol ol ul ul, ul ul ul ol ul ol ul, ul ul ul ol ul ul ul, ul ul ul ul ol ol ul, ul ul ul ul ol ul ul, ul ul ul ul ul ol ul, ul ul ul ul ul ul ul{
+    list-style-type: disc;
+}
+img {
+    max-width:500px; 
 }
 .shadow{
     -webkit-box-shadow:0 5px 15px #000;
