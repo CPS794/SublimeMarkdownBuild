@@ -19,6 +19,8 @@ class MarkdownBuild(sublime_plugin.WindowCommand):
         open_html_in = s.get("open_html_in", "browser")
         use_css = s.get("use_css", True)
         charset = s.get("charset", "UTF-8")
+        use_script = s.get("use_script", False)
+        body_add = s.get("body_add", "")
 
         view = self.window.active_view()
         if not view:
@@ -28,13 +30,22 @@ class MarkdownBuild(sublime_plugin.WindowCommand):
             return
         contents = view.substr(sublime.Region(0, view.size()))
         md = markdown_python.markdown(contents)
-        html = '<html><meta charset="' + charset + '">'
+        html = '<html><head><meta charset="' + charset + '">'
         if use_css:
             css = os.path.join(sublime.packages_path(), 'MarkdownBuild', 'markdown.css')
             if (os.path.isfile(css)):
                 styles = open(css, 'r').read()
                 html += '<style>' + styles + '</style>'
-        html += "<body>" + md + "</body></html>"
+        if use_script:
+            script = os.path.join(sublime.packages_path(), 'MarkdownBuild', 'js4markdown.js')
+            if (os.path.isfile(script)):
+                scripts = open(script, 'r').read()
+                html += '<script>' + scripts + '</script>'
+        html += '</head>'
+        html += "<body"
+        if use_script:
+            html += body_add
+        html += ">" + md + "</body></html>"
 
         if output_html:
             html_name = os.path.splitext(file_name)[0]
