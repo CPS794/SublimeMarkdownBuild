@@ -1,6 +1,6 @@
 # MarkdownBuild (version 0.4.0)
 
-This is a Sublime Text plugin for building markdown into html and view it in browser. However, it's still under developing and it's recommend to use the version by [erinata](https://github.com/erinata/SublimeMarkdownBuild) unless you know what I am doing.
+This is a Sublime Text plugin for building markdown into html and view it in browser. However, __it's still under developing and it's recommend to use the version by [erinata](https://github.com/erinata/SublimeMarkdownBuild) unless you know what I am doing.__
 
 ## Installation
 
