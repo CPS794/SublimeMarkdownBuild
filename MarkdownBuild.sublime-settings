@@ -4,6 +4,5 @@
     "use_css" : true,
     "charset" : "UTF-8",
     "use_script" : true,
-    "body_add":" onload=load()",
-    "script_url":"js4markdown.js"
+    "body_add":" onload=load()"
 }
